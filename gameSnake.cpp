@@ -1,5 +1,7 @@
 ﻿// gameSnake.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
+//char cod head - 16,17,30.31,
+//		   body - 22
 
 #include <iostream>
 using namespace std;
@@ -28,7 +30,7 @@ void Displai() {
 
 int main()
 {
-	char apple'*';
+	char apple = '*';
 
 	for (int i = 0; i < 256; i++)
 	{
