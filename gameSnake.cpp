@@ -5,16 +5,17 @@
 using namespace std;
 char playingField[10][10];
 
-int main()
-{
+void InicialDisplai() {
 	for (int i = 0; i < 10; i++)
 	{
 		for (int j = 0; j < 10; j++)
 		{
-			playingField[i][j]=' ';
+			playingField[i][j] = ' ';
 		}
-		
+
 	}
+}
+void Displai() {
 	for (int i = 0; i < 10; i++)
 	{
 		for (int j = 0; j < 10; j++)
@@ -23,5 +24,16 @@ int main()
 		}
 		cout << endl;
 	}
+}
+
+int main()
+{
+	char apple'*';
+
+	for (int i = 0; i < 256; i++)
+	{
+		cout << i << "= " << (char)i << endl;
+	}
+	
 	
 }
