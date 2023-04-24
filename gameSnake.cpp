@@ -6,8 +6,10 @@
 #include <iostream>
 using namespace std;
 char playingField[10][10];
+const char apple = '*';
 
-void InicialDisplai() {
+void InicialDisplai() 
+{
 	for (int i = 0; i < 10; i++)
 	{
 		for (int j = 0; j < 10; j++)
@@ -17,7 +19,8 @@ void InicialDisplai() {
 
 	}
 }
-void Displai() {
+void Displai() 
+{
 	for (int i = 0; i < 10; i++)
 	{
 		for (int j = 0; j < 10; j++)
@@ -27,15 +30,26 @@ void Displai() {
 		cout << endl;
 	}
 }
+void SpavnApple()
+{
+	int i, j;
+	srand(time(NULL));
+	do
+	{
+		i = rand();
+		j = rand();
+		if (playingField[i][j] == ' ')
+		{
+			playingField[i][j] = apple;
+			break;
+		}
+	} while (true);
+
+}
 
 int main()
 {
-	char apple = '*';
 
-	for (int i = 0; i < 256; i++)
-	{
-		cout << i << "= " << (char)i << endl;
-	}
-	
+
 	
 }
