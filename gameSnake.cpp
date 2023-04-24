@@ -46,6 +46,13 @@ void SpavnApple()
 	} while (true);
 
 }
+class Snake
+{
+public:
+	char body = '$';
+	const int size = 3;
+
+};
 
 int main()
 {
