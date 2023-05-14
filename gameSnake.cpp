@@ -30,6 +30,9 @@ void Displai()
 		cout << endl;
 	}
 }
+void clear() {
+	std::cout << "\x1B[2J\x1B[H";
+}
 void SpavnApple()
 {
 	int i, j;
@@ -50,13 +53,26 @@ class Snake
 {
 public:
 	char body = '$';
-	const int size = 3;
+	int size = 3;
 
+	const void Move()
+	{
+
+	}
 };
 
 int main()
 {
 
+	InicialDisplai();
+	do
+	{
+		clear();
+		Displai();
+		Snake.Move();
+
+
+	} while (true);
 
 	
 }
